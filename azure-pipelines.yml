@@ -17,8 +17,9 @@ steps:
 
 - script: |
     npm install
-     npm audit fix
-    npx wdio run ./wdio.conf.js
+
+       npm audit fix
+    npm wdio run ./wdio.conf.js
   displayName: 'npm install and build'
 
 - task: PublishTestResults@2
