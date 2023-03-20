@@ -17,11 +17,13 @@ steps:
 
 - script: |
     npm install
-
        npm audit fix
-    npx wdio wdio.config.js
-  displayName: 'npm install and build'
 
+  displayName: 'npm install'
+- script: |
+
+    npx wdio wdio.config.js
+  displayName: 'test run'
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
