@@ -19,5 +19,6 @@
     "@wdio/mocha-framework": "^8.2.0",
     "@wdio/selenium-standalone-service": "^8.2.0",
     "@wdio/spec-reporter": "^8.1.2"
+     "@wdio/junit-reporter": "^8.6.8"
   }
 }
