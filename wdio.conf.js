@@ -132,8 +132,8 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
        reporters: ['spec','junit', {
         outputDir: './',
-        outputFileFormat: function(options) { // optional
-            return `results-${options.cid}.${options.capabilities}.xml`
+        outputFileFormat: function() { // optional
+            return `results-.xml`
         }
     }],
 
